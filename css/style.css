@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #121212;
+    display: block;
+    font-size: 0.36rem;
+}
+
+html {
+    /*rem单位永远以html做参考缩放；百分比和em以父元素做参考*/
+    font-size: 625%; /*16*6.25=100px*/
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #666666;
+    max-width: 640px; /*效果图的宽度*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 0.24rem; /*body中默认使用做多的字体大小*/
+    background: #e4d6f4 url(../images/bg.jpg) no-repeat top center;
+    background-size:6.4rem,6.4rem;
+    padding-top: 6.4rem;padding-bottom: 1.49rem;
+    position: relative;
+}
+
+.clearfix { *zoom: 1;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.btn{width:5.8rem;height:0.9rem;border-radius: 0.05rem;background-color: #ffb417;text-align: center;line-height: 0.9rem;margin:0.43rem auto 0.27rem;}
+.txt{margin:0 auto ;width:5.8rem;}
+.txt dt{font-size:0.33rem;color:#333333;line-height: 0.52rem; }
+.txt dd{font-size:0.24rem;color:#666666;line-height: 0.36rem; }
+.award_box{position: absolute;top:1.31rem;left:50%;margin-left: -2.49rem;width:5.18rem;height:5.18rem;}
+.award_box i{position: absolute;top:0;left:0;width:5.18rem;height:5.18rem;background: url("../images/zhuanpan.png") no-repeat;background-size: 5.18rem 5.18rem;
+    -webkit-transition: transform 3s;
+    -moz-transition: transform 3s;
+    -ms-transition: transform 3s;
+    -o-transition: transform 3s;
+    transition: transform 3s;
+}
+.little_box{background: url("../images/icon.png") no-repeat;width:1.10rem;height:1.21rem;position: absolute;left: 50%;margin-left: -0.55rem;top:50%;margin-top:-0.66rem;background-size: 1.1rem 1.21rem;}
